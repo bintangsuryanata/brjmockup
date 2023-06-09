@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRJ - FAQs</title>
+    <!-- favicon link -->
+    <link rel="shortcut icon"
+        href="https://media.discordapp.net/attachments/963226363362422794/1049199082515742781/iconlogo.png"
+        type="image/x-icon">
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicons cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- alpine js cdn -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- style css -->
+    <style type="text/tailwindcss">
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== header ====== -->
+
+
+    <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 bg-white/90 w-full backdrop-blur">
+        <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+            <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
+                <!-- logo -->
+                <div class="w-[15rem] max-w-full">
+                    <a href="#">
+                        <img src="https://media.discordapp.net/attachments/963226363362422794/1049180572884422736/teslogoh__1_-removebg-preview_1.png"
+                            alt="logo" class="w-full">
+                    </a>
+                </div>
+
+                <!-- menu -->
+                <div class="flex w-full items-center justify-between">
+                    <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse"
+                        class="absolute right-0 top-[90px] w-full max-w-[350px] rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
+                        <ul class="flex flex-col justify-center gap-8 lg:flex-row">
+                        <li>
+                                <a href="index.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                            </li>
+                            <li>
+                                <a href="services.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                            </li>
+                            <li>
+                                <a href="teams.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Teams</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="faq.html"
+                                    class="text-lg font-medium text-blue-700 duration-200 hover:text-red-500 lg:text-base">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu btn -->
+                <div class="flex">
+                    <a href="#"
+                        class="mr-10 hidden rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">Register</a>
+
+                    <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
+                        id="navbarToggler" class="block lg:hidden">
+                        <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====== END header ====== -->
+
+    <!-- ====== FAQ ====== -->
+
+    <section class="py-16">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <!-- heading text -->
+            <div class="mb-5 sm:mb-10">
+                <span class="font-medium text-blue-500">Our FAQ</span>
+                <h1 class="text-2xl font-bold text-slate-700 sm:text-3xl">Frequently Asked Questions</h1>
+            </div>
+            <!-- wrapper -->
+            <div class="md:flex md:justify-between md:gap-6">
+                <div class="mb-8 flex justify-center md:mb-0 md:w-5/12 ml-24 md:ml-0">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_zntl98s1.json" background="transparent" speed="1" style="width: 560px; height: 560px; margin-top: -50px; margin-left: -100px;" loop autoplay></lottie-player>
+                    <!-- <img src="https://assets3.lottiefiles.com/packages/lf20_zntl98s1.json"
+                        alt="faq images" class="max-h-[500px] md:max-h-max"> -->
+                </div>
+
+                <div class="md:w-6/12">
+                    <div class="" x-data="{selected:1}">
+                        <ul>
+                            <li class="relative mb-5">
+                                <button type="button" class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
+                                    @click="selected !== 1 ? selected = 1 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="font-medium text-slate-600">How long will it take for Project to be done ?
+                                        </h4>
+                                        <ion-icon name="chevron-down-circle-outline" class="w-8 text-lg text-blue-500">
+                                        </ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-50/30 transition-all duration-500"
+                                    x-ref="container1"
+                                    x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
+                                    <div class="p-6">
+                                        <p class="text-slate-500">Depends on the model that you requested, it can takes up to two month to do it.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="relative mb-5">
+                                <button type="button" class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
+                                    @click="selected !== 2 ? selected = 2 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="font-medium text-slate-600">Can you make Design for Project that i requested ?
+                                        </h4>
+                                        <ion-icon name="chevron-down-circle-outline" class="w-8 text-lg text-blue-500">
+                                        </ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-50/30 transition-all duration-500"
+                                    x-ref="container2"
+                                    x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
+                                    <div class="p-6">
+                                        <p class="text-slate-500">Yes we can make Design with complete fiture, but unfortunetly we can only accept 1 Project slot request with Design & Fiture</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="relative mb-5">
+                                <button type="button" class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
+                                    @click="selected !== 3 ? selected = 3 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="font-medium text-slate-600">Returns ?
+                                        </h4>
+                                        <ion-icon name="chevron-down-circle-outline" class="w-8 text-lg text-blue-500">
+                                        </ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-50/30 transition-all duration-500"
+                                    x-ref="container3"
+                                    x-bind:style="selected == 3 ? 'max-height: ' + $refs.container3.scrollHeight + 'px' : ''">
+                                    <div class="p-6">
+                                        <p class="text-slate-500">All purchases are final. <p class="text-red-500">NO REFUNDS</p> </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="relative mb-5">
+                                <button type="button" class="w-full rounded-lg bg-blue-50 px-8 py-6 text-left"
+                                    @click="selected !== 4 ? selected = 4 : selected = null">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="font-medium text-slate-600">How much will it take to create custom project for Web & App ?
+                                        </h4>
+                                        <ion-icon name="chevron-down-circle-outline" class="w-8 text-lg text-blue-500">
+                                        </ion-icon>
+                                    </div>
+                                </button>
+
+                                <div class="relative max-h-0 overflow-hidden rounded-b-lg bg-blue-50/30 transition-all duration-500"
+                                    x-ref="container4"
+                                    x-bind:style="selected == 4 ? 'max-height: ' + $refs.container4.scrollHeight + 'px' : ''">
+                                    <div class="p-6">
+                                        <p class="text-slate-500">Our standart price start from $400 it also depend on the model that you requested based on difficulties.( Design for UI/UX are not included ),</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== END FAQ ====== -->
+
+    <!-- ====== footer ====== -->
+
+    <footer class="bg-slate-50/80 pt-16">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+
+            <!-- footer top -->
+            <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+                <div class="md:max-w-md lg:col-span-2">
+                    <img src="https://media.discordapp.net/attachments/963226363362422794/1049180572884422736/teslogoh__1_-removebg-preview_1.png"
+                        alt="footer logo" class="w-36">
+                    <div class="mt-4 lg:max-w-sm">
+                        <p class="text-sm text-slate-500">BRJ is a Student Startup Established in 2022 with 7 Founders, Each of Whom is a Jobdesk Specialist</p>
+                        <p class="text-sm text-slate-500 mt-2">This startup serves IT Consultants, Website Development, Application Development, Server Maintenance</p>
+                    </div>
+                </div>
+
+                <div class="grid row-gap-8 grid-cols-2 gap-5 md:grid-cols-4 lg:col-span-4">
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Category</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">News</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">World</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Games</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">References</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Business</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Business</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Entertainment</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Apples</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Media</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Brochure</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Nonprofit</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Educational</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Cherry</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Infopreneur</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Personal</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Wiki</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End footer top -->
+
+                <!-- footer bottom -->
+                <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
+                    <p class="text-sm text-slate-500">© Copyright 2022 <a href="#"
+                            class="text-slate-700 hover:text-blue-500">BRJ</a> All rights reserved.</p>
+                    <div class="mt-4 flex items-center space-x-4 sm:mt-0">
+                        <a href="#">
+                            <ion-icon name="logo-facebook" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-youtube" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- End footer bottom -->
+
+        </div>
+    </footer>
+
+    <!-- ====== END footer ====== -->
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+</html>

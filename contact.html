@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BRJ - Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon"
+        href="https://media.discordapp.net/attachments/963226363362422794/1049199082515742781/iconlogo.png"
+        type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css'>
+  <link rel='stylesheet' href='https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- ====== header ====== -->
+
+    <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 bg-white/90 w-full backdrop-blur">
+        <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+            <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
+                <!-- logo -->
+                <div class="w-[15rem] max-w-full">
+                    <a href="#">
+                        <img src="https://media.discordapp.net/attachments/963226363362422794/1049180572884422736/teslogoh__1_-removebg-preview_1.png"
+                            alt="logo" class="w-full">
+                    </a>
+                </div>
+
+                <!-- menu -->
+                <div class="flex w-full items-center justify-between">
+                    <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse"
+                        class="absolute right-0 top-[90px] w-full max-w-[350px] rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
+                        <ul class="flex flex-col justify-center gap-8 lg:flex-row">
+                            <li>
+                                <a href="index.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                            </li>
+                            <li>
+                                <a href="services.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                            </li>
+                            <li>
+                                <a href="teams.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Teams</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="faq.html"
+                                    class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="text-lg font-medium text-blue-600 duration-200 hover:text-red-500 lg:text-base">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu btn -->
+                <div class="flex">
+                    <a href="#"
+                        class="mr-10 hidden rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">Register</a>
+
+                    <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'"
+                        id="navbarToggler" class="block lg:hidden">
+                        <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====== END header ====== -->   
+
+<!-- Container for demo purpose -->
+<div class="container my-24 px-6 mx-auto">
+
+    <!-- Section: Design Block -->
+    <section class="mb-32 text-gray-800">
+      <style>
+        .map-container-2 {
+          height: 500px;
+          margin: 20px 20px 20px;
+        }
+      </style>
+      <div class="block rounded-lg shadow-lg bg-gray-200">
+        <div class="flex flex-wrap items-center">
+          <div class="grow-0 shrink-0 basis-auto block w-full lg:flex lg:w-6/12 xl:w-4/12">
+            <div class="map-container-2 w-full">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2372.4618275609723!2d114.83237311143307!3d-3.441183263151052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de681d47b0ffd3b%3A0x3b48838a3c931f5b!2sTelkom%20Schools%20-%20SMK%20Telkom%20Banjarbaru!5e1!3m2!1sid!2sid!4v1684258946336!5m2!1sid!2sid" class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
+            <div class="flex flex-wrap pt-12 lg:pt-0">
+              <div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 lg:w-full xl:w-6/12 px-3 md:px-6 xl:px-12">
+                <div class="flex items-start">
+                  <div class="shrink-0">
+                    <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headset" class="w-5 text-white"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                          d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="grow ml-6">
+                    <p class="font-bold mb-1">Customer Services</p>
+                    <p class="text-gray-500">bintangs@brj.id</p>
+                    <p class="text-gray-500">+6289693238418</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 lg:w-full xl:w-6/12 px-3 md:px-6 xl:px-12">
+                <div class="flex items-start">
+                  <div class="shrink-0">
+                    <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dollar-sign"
+                        class="w-3 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 512">
+                        <path fill="currentColor"
+                          d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="grow ml-6">
+                    <p class="font-bold mb-1">Sales Questions</p>
+                    <p class="text-gray-500">will@brj.id</p>
+                    <p class="text-gray-500">+6283141500153</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 lg:w-full xl:w-6/12 px-3 md:px-6 xl:px-12">
+                <div class="flex align-start">
+                  <div class="shrink-0">
+                    <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="newspaper"
+                        class="w-5 text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path fill="currentColor"
+                          d="M552 64H88c-13.255 0-24 10.745-24 24v8H24c-13.255 0-24 10.745-24 24v272c0 30.928 25.072 56 56 56h472c26.51 0 48-21.49 48-48V88c0-13.255-10.745-24-24-24zM56 400a8 8 0 0 1-8-8V144h16v248a8 8 0 0 1-8 8zm236-16H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm-208-96H140c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm208 0H348c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12h152c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12zm0-96H140c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h360c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="grow ml-6">
+                    <p class="font-bold mb-1">RapidPulse News</p>
+                    <p class="text-gray-500">yaf@brj.id</p>
+                    <p class="text-gray-500">+628115249595</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-12 lg:mb-0 grow-0 shrink-0 basis-auto w-full md:w-6/12 lg:w-full xl:w-6/12 px-3 md:px-6 xl:px-12">
+                <div class="flex align-start">
+                  <div class="shrink-0">
+                    <div class="p-4 bg-blue-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bug" class="w-5 text-white"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                          d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="grow ml-6">
+                    <p class="font-bold mb-1">Bug report</p>
+                    <p class="text-gray-500">jadur@brj.id</p>
+                    <p class="text-gray-500">+6283147051164</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  </div>
+
+      <!-- ====== footer ====== -->
+
+      <footer class="bg-slate-50/80 pt-16">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+
+            <!-- footer top -->
+            <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+                <div class="md:max-w-md lg:col-span-2">
+                    <img src="https://media.discordapp.net/attachments/963226363362422794/1049180572884422736/teslogoh__1_-removebg-preview_1.png"
+                    alt="footer logo" class="w-36">
+                        <div class="mt-4 lg:max-w-sm">
+                            <p class="text-sm text-slate-500">BRJ is a Student Startup Established in 2022 with 7 Founders, Each of Whom is a Jobdesk Specialist</p>
+                            <p class="text-sm text-slate-500 mt-2">This startup serves IT Consultants, Website Development, Application Development, Server Maintenance</p>
+                        </div>
+                </div>
+
+                <div class="grid row-gap-8 grid-cols-2 gap-5 md:grid-cols-4 lg:col-span-4">
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Category</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">News</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">World</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Games</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">References</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Business</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Business</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Entertainment</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Apples</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Media</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Brochure</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Nonprofit</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Educational</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Cherry</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Infopreneur</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Personal</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Wiki</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End footer top -->
+
+                <!-- footer bottom -->
+                <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
+                    <p class="text-sm text-slate-500">© Copyright 2022 <a href="#"
+                            class="text-slate-700 hover:text-blue-500">BRJ</a> All rights reserved.</p>
+                    <div class="mt-4 flex items-center space-x-4 sm:mt-0">
+                        <a href="#">
+                            <ion-icon name="logo-facebook" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-youtube" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- End footer bottom -->
+
+        </div>
+    </footer>
+
+    <!-- ====== END footer ====== -->
+
+</body>

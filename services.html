@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRJ - Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    <!-- ====== header ====== -->
+
+
+    <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 bg-white/90 w-full backdrop-blur">
+        <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+            <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
+                <!-- logo -->
+                <div class="w-[15rem] max-w-full">
+                    <a href="#">
+                        <img src="https://media.discordapp.net/attachments/963226363362422794/1049180572884422736/teslogoh__1_-removebg-preview_1.png" alt="logo" class="w-full">
+                    </a>
+                </div>
+
+                <!-- menu -->
+                <div class="flex w-full items-center justify-between">
+                    <nav x-transition :class="!navbarOpen && 'hidden'" id="navbarCollapse" class="absolute right-0 top-[90px] w-full max-w-[350px] rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
+                        <ul class="flex flex-col justify-center gap-8 lg:flex-row">
+                            <li>
+                                <a href="index.html" class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Home</a>
+                            </li>
+                            <li>
+                                <a href="services.html" class="text-lg font-medium text-blue-600 lg:text-base">Services</a>
+                            </li>
+                            <li>
+                                <a href="teams.html" class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Teams</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html" class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="faq.html" class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu btn -->
+                <div class="flex">
+                    <a href="#" class="mr-10 hidden rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200 hover:bg-blue-600 sm:block lg:mr-0">Register</a>
+
+                    <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'" id="navbarToggler" class="block lg:hidden">
+                        <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ====== END header ====== -->
+    </nav>
+
+    <!-- ====== hero ====== -->
+
+    <section class="relative bg-white py-8 lg:pt-[100px]">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-5/12 mt-[120px]">
+                    <h1 class="text-slate-800 mb-3 text-4xl font-bold leading-snug sm:text-[42px] lg:text-[40px] xl:text-[42px]">
+                        We provide everything you need to run your <span class="text-blue-600">website</span></h1>
+                    <p class="text-slate-500 mb-8 max-w-[480px] text-base">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Facere alias voluptate esse blanditiis molestiae repudiandae fugiat eius
+                        sapiente expedita ut.
+                    </p>
+
+                    <!-- <button class="w-full rounded-md bg-blue-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-600 duration-200 sm:w-auto">Get
+                        Started</button>
+
+                    <button class="mt-4 box-border w-full rounded-md border border-blue-500/20 px-8 py-2.5 font-semibold text-blue-500 shadow-md shadow-blue-500/10 duration-200 sm:ml-4 sm:mt-0 sm:w-auto ">Register
+                        Now</button> -->
+
+                </div>
+
+                <div class="hidden px-4 lg:block lg:w-1/12"></div>
+
+                <div class="w-full px-4 lg:w-6/12 mt-[-80px]">
+                    <div class="lg:ml-auto lg:text-right">
+                        <div class="relative z-10 inline-block pt-11 lg:pt-0">
+                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_qo07xg45.json" background="transparent" speed="1" style="width: 660px; height: 660px;" loop autoplay></lottie-player>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== END hero ====== -->
+
+    <section class="relative bg-white py-8 pt-[30px]">
+        <div class="mx-auto max-w-7xl px-8">
+            <div class="flex justify-center">
+                <h1 class="text-[#000000] my-8 text-4xl" data-aos="fade-up" data-aos-duration="20000">
+                    What's our service?
+                </h1>
+            </div>
+            <div class="flex flex-wrap mx-40">
+                <div class="text-start mb-10 text-white rounded-lg bg-[#3b82f6] text-base hover:shadow-lg transition-all duration-300 hover:shadow-slate-700" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="container w-full h-[300px] overflow-hidden rounded-t-lg bg-black">
+                        <img src="https://niagaspace.sgp1.digitaloceanspaces.com/blog/wp-content/uploads/2021/12/15143817/programmer-adalah-1024x674.webp" class="w-full h-full object-fill" alt="" style="opacity: 0.55;">
+                    </div>
+                    <div class="container px-4">
+                        <h2 class="my-2 text-2xl font-bold leading-snug">Web Design</h2>
+                        <p class="text-base"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea error suscipit totam praesentium. Ut provident veniam molestias quia omnis suscipit voluptates saepe a harum, repudiandae enim. Facere dolore voluptate similique odit animi, eaque asperiores, fugit enim repellendus praesentium eveniet mollitia, soluta iste eligendi inventore quae reprehenderit repudiandae. Unde, officia.</p>
+                    </div>
+                    <div class="flex justify-end mx-4">
+                        <a href="#" class="mx-5 my-5 hidden rounded-md bg-green-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200  sm:block lg:mr-0 hover:bg-green-600">Buy</a>
+
+                        <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'" id="navbarToggler" class="block lg:hidden">
+                            <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-wrap mx-40">
+                <div class="text-start mb-10 text-white rounded-lg bg-[#3b82f6] text-base hover:shadow-lg transition-all duration-300 hover:shadow-slate-700" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="container w-full h-[300px] overflow-hidden rounded-t-lg bg-black">
+                        <img src="https://thumbs.dreamstime.com/b/young-programmer-working-laptop-near-racks-computer-equipment-teenager-programming-server-hardware-sitting-182117714.jpg" class="w-full h-full object-fill" alt="" style="opacity: 0.55;">
+                    </div>
+                    <div class="container px-4">
+                        <h2 class="my-2 text-2xl font-bold leading-snug">Server Management</h2>
+                        <p class="text-base"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea error suscipit totam praesentium. Ut provident veniam molestias quia omnis suscipit voluptates saepe a harum, repudiandae enim. Facere dolore voluptate similique odit animi, eaque asperiores, fugit enim repellendus praesentium eveniet mollitia, soluta iste eligendi inventore quae reprehenderit repudiandae. Unde, officia.</p>
+                    </div>
+                    <div class="flex justify-end mx-4">
+                        <a href="#" class="mx-5 my-5 hidden rounded-md bg-green-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200  sm:block lg:mr-0 hover:bg-green-600">Buy</a>
+
+                        <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'" id="navbarToggler" class="block lg:hidden">
+                            <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-wrap mx-40">
+                <div class="text-start mb-10 text-white rounded-lg bg-[#3b82f6] text-base hover:shadow-lg transition-all duration-300 hover:shadow-slate-700" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="container w-full h-[300px] overflow-hidden rounded-t-lg bg-black">
+                        <img src="https://lh3.googleusercontent.com/Sri80OCZ7mpJbmGdBCxLTOsXoi1Q19H8MPjag4M4ZDvakGMXQUlujOAlsnkbw1a5xV4ECfeImB3ybr0zxHGIsu1ZZoDu96FZJWatqNCIvUbZ6MLOmNfnS3IA1Vq2BzLkpbESRu03r0daVqKRWQwwzXo" class="w-full h-full object-fill" alt="" style="opacity: 0.55;">
+                    </div>
+                    <div class="container px-4">
+                        <h2 class="my-2 text-2xl font-bold leading-snug">Mobile App Design</h2>
+                        <p class="text-base"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea error suscipit totam praesentium. Ut provident veniam molestias quia omnis suscipit voluptates saepe a harum, repudiandae enim. Facere dolore voluptate similique odit animi, eaque asperiores, fugit enim repellendus praesentium eveniet mollitia, soluta iste eligendi inventore quae reprehenderit repudiandae. Unde, officia.</p>
+                    </div>
+                    <div class="flex justify-end mx-4">
+                        <a href="#" class="mx-5 my-5 hidden rounded-md bg-green-500 px-8 py-2.5 font-semibold text-white shadow-md shadow-blue-500/20 duration-200  sm:block lg:mr-0 hover:bg-green-600">Buy</a>
+
+                        <button @click="navbarOpen = !navbarOpen" :class="navbarOpen && 'navbarTogglerActive'" id="navbarToggler" class="block lg:hidden">
+                            <ion-icon name="menu-outline" class="text-4xl text-blue-500"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== footer ====== -->
+
+    <footer class="bg-slate-50/80 pt-16">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+
+            <!-- footer top -->
+            <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+                <div class="md:max-w-md lg:col-span-2">
+                    <img src="https://media.discordapp.net/attachments/963226363362422794/1049180572884422736/teslogoh__1_-removebg-preview_1.png" alt="footer logo" class="w-36">
+                    <div class="mt-4 lg:max-w-sm">
+                        <p class="text-sm text-slate-500">BRJ is a Student Startup Established in 2022 with 7 Founders, Each of Whom is a Jobdesk Specialist</p>
+                        <p class="text-sm text-slate-500 mt-2">This startup serves IT Consultants, Website Development, Application Development, Server Maintenance</p>
+                    </div>
+                </div>
+
+                <div class="grid row-gap-8 grid-cols-2 gap-5 md:grid-cols-4 lg:col-span-4">
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Category</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">News</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">World</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Games</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">References</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Business</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Business</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Entertainment</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Apples</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Media</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Brochure</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Nonprofit</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Educational</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Cherry</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Infopreneur</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Personal</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Wiki</a>
+                            </li>
+                            <li><a href="#" class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End footer top -->
+
+            <!-- footer bottom -->
+            <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
+                <p class="text-sm text-slate-500">© Copyright 2022 <a href="#" class="text-slate-700 hover:text-blue-500">BRJ</a> All rights reserved.</p>
+                <div class="mt-4 flex items-center space-x-4 sm:mt-0">
+                    <a href="#">
+                        <ion-icon name="logo-facebook" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                        </ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                        </ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-youtube" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                        </ion-icon>
+                    </a>
+                </div>
+            </div>
+            <!-- End footer bottom -->
+
+        </div>
+    </footer>
+
+    <!-- ====== END footer ====== -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

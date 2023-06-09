@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BRJ - Teams</title>
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/963226363362422794/1049199082515742781/iconlogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <!-- favicon link -->
+    <link rel="shortcut icon"
+    href="https://media.discordapp.net/attachments/963226363362422794/1049199082515742781/iconlogo.png"
+    type="image/x-icon">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicons cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- google font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicons cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body class="loading">
+    <svg class="hidden">
+        <symbol id="icon-cross" viewBox="0 0 24 24">
+            <title>cross</title>
+            <path d="M 5.5,2.5 C 5.372,2.5 5.244,2.549 5.146,2.646 L 2.646,5.146 C 2.451,5.341 2.451,5.659 2.646,5.854 L 8.793,12 2.646,18.15 C 2.451,18.34 2.451,18.66 2.646,18.85 L 5.146,21.35 C 5.341,21.55 5.659,21.55 5.854,21.35 L 12,15.21 18.15,21.35 C 18.24,21.45 18.37,21.5 18.5,21.5 18.63,21.5 18.76,21.45 18.85,21.35 L 21.35,18.85 C 21.55,18.66 21.55,18.34 21.35,18.15 L 15.21,12 21.35,5.854 C 21.55,5.658 21.55,5.342 21.35,5.146 L 18.85,2.646 C 18.66,2.451 18.34,2.451 18.15,2.646 L 12,8.793 5.854,2.646 C 5.756,2.549 5.628,2.5 5.5,2.5 Z"/>
+        </symbol>
+        <!-- Magnifier by Gregor Cresnar https://www.flaticon.com/authors/gregor-cresnar -->
+        <symbol id="icon-magnifier"viewBox="0 0 490.8 490.8">
+            <title>magnifier</title>
+            <path d="M364.8,299.55c46.3-75.8,36.9-176.3-28.6-241.9c-76.8-76.8-201.8-76.8-278.6,0s-76.8,201.8,0,278.5c65.5,65.5,166,74.9,241.9,28.6L412,477.25c18,18,47.3,18,65.3,0s18-47.3,0-65.3L364.8,299.55z M295.5,295.55c-54.4,54.4-142.8,54.4-197.1,0c-54.4-54.4-54.4-142.8,0-197.1c54.4-54.4,142.8-54.4,197.1,0C349.8,152.75,349.8,241.15,295.5,295.55z M220,171.95h59.4v45.3H220v59.4h-45.3v-59.4h-59.3v-45.3h59.4v-59.4h45.3v59.4H220z"/>
+        </symbol>
+        </svg>
+
+        <div class="content">
+            <!-- ====== header ====== -->
+            <header x-data="{navbarOpen: false}" class="absolute sticky left-0 top-0 z-50 bg-white/90 w-full backdrop-blur">
+                <div class="mx-auto h-[90px] max-w-7xl px-8 md:px-6">
+                    <div class="relative flex h-full items-center justify-between border-b border-slate-500/10">
+                        <!-- logo -->
+                        <div class="w-[15rem] max-w-full">
+                            <a href="#">
+                                <img src="https://media.discordapp.net/attachments/963226363362422794/1049180572884422736/teslogoh__1_-removebg-preview_1.png"
+                                    alt="logo" class="w-full">
+                            </a>
+                        </div>
+        
+                        <!-- menu -->
+                        <div class="flex w-full items-center justify-between">
+                            <nav
+                                class="absolute right-0 top-[90px] w-full max-w-[150px] invisible lg:visible rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
+                                <ul class="flex flex-col justify-center gap-8 lg:flex-row mt-5">
+                                    <li>
+                                        <a href="index.html"
+                                            class="text-lg font-medium text-blue-600 duration-200 hover:text-red-500 lg:text-base">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html"
+                                            class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="teams.html"
+                                            class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Teams</a>
+                                    </li>
+                                    <li>
+                                        <a href="portfolio.html"
+                                            class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html"
+                                            class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"
+                                            class="text-lg font-medium text-slate-700 duration-200 hover:text-blue-600 lg:text-base">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <a href="#"
+                        class="invisible md:visible mt-5 rounded-md bg-blue-500 px-5 py-2 font-semibold text-white hover:text-teal-400 shadow-md shadow-blue-500/20 duration-200 hover:bg-white sm:block lg:mr-32">Register</a>
+                    </div>
+                </div>
+            </header>
+            <!-- ====== END header ====== -->
+        
+        </div>
+        <button class="dummy-menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
+        <div class="content">
+            <div class="grid">
+                <div class="grid__item">
+                    <div class="product">
+                        <div class="product__bg"></div>
+                        <img class="product__img" style="margin-top: 76px;" src="img/1.png" alt="Muhammad Abdurrahman"/>
+                        <h2 class="product__title">Muhammad Abdurrahman</h2>
+                        <h3 class="product__subtitle">Backend Developer</h3>
+                        <p class="product__description"></p>
+                        <div class="product__price"></div>
+                        
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="product">
+                        <div class="product__bg"></div>
+                        <img class="product__img" style="margin-top: 80px;" src="img/2.png" alt="Yafi"/>
+                        <h2 class="product__title">Muhammad Yafi Ibrahim Al Mishbah</h2>
+                        <h3 class="product__subtitle">Fullstack Developer</h3>
+                        <p class="product__description"></p>
+                        <div class="product__price"></div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="product">
+                        <div class="product__bg"></div>
+                        <img class="product__img" style="margin-top: 80px;" src="img/3.png" alt="STAR"/>
+                        <h2 class="product__title">Gusti Muhammad Bintang Suryanata</h2>
+                        <h3 class="product__subtitle">Front End Developer</h3>
+                        <p class="product__description"></p>
+                        <div class="product__price"></div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="product">
+                        <div class="product__bg"></div>
+                        <img class="product__img" style="margin-top: 80px;" src="img/4.png" alt="img 04"/>
+                        <h2 class="product__title">William Djati Utomo</h2>
+                        <h3 class="product__subtitle">Backend Developer</h3>
+                        <p class="product__description"></p>
+                        <div class="product__price"></div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="product">
+                        <div class="product__bg"></div>
+                        <img class="product__img" style="margin-top: 80px;" src="img/5.png" alt="img 05"/>
+                        <h2 class="product__title">Zaki Rikja Sadikin</h2>
+                        <h3 class="product__subtitle">Front End Developer</h3>
+                        <p class="product__description"></p>
+                        <div class="product__price"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== footer ====== -->
+
+    <footer class="bg-slate-50/80 pt-16 flex">
+        <div class="mx-auto max-w-7xl px-8 md:px-6">
+
+            <!-- footer top -->
+            <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+                <div class="md:max-w-md lg:col-span-2">
+                    <img src="https://media.discordapp.net/attachments/963226363362422794/1049180572884422736/teslogoh__1_-removebg-preview_1.png"
+                        alt="footer logo" class="w-36">
+                   <div class="mt-4 lg:max-w-sm">
+                        <p class="text-sm text-slate-500">BRJ is a Student Startup Established in 2022 with 7 Founders, Each of Whom is a Jobdesk Specialist</p>
+                        <p class="text-sm text-slate-500 mt-2">This startup serves IT Consultants, Website Development, Application Development, Server Maintenance</p>
+                    </div>
+                </div>
+
+                <div class="grid row-gap-8 mt-5 grid-cols-2 gap-5 md:grid-cols-4 lg:col-span-4">
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Category</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">News</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">World</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Games</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">References</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Business</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Web</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">eCommerce</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Business</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Entertainment</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Portfolio</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Apples</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Media</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Brochure</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Nonprofit</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Educational</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <!-- head -->
+                        <p class="font-semibold text-slate-700">Cherry</p>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Infopreneur</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Personal</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Wiki</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-slate-500 transition-colors duration-300 hover:text-slate-700">Forum</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End footer top -->
+
+                <!-- footer bottom -->
+                <div class="flex flex-col justify-between border-t py-8 sm:flex-row">
+                    <p class="text-sm text-slate-500">© Copyright 2022 <a href="#"
+                            class="text-slate-700 hover:text-blue-500">BRJ</a> All rights reserved.</p>
+                    <div class="mt-4 flex items-center space-x-4 sm:mt-0">
+                        <a href="#">
+                            <ion-icon name="logo-facebook" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-youtube" class="text-2xl text-slate-500 hover:text-blue-500 duration-300">
+                            </ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- End footer bottom -->
+        </div>
+    </footer>
+
+    <!-- ====== END footer ====== -->
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
